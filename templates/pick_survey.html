@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Choose Your Survey{% endblock %}
+
+{% block content %}
+
+    <h1>Choose Your Survey</h1>
+    <form action="/start_survey">
+        <select name="pick_survey">
+        <option selected>Choose Story</option>  
+        <option value="satisfaction">Satisfaction Survey</option>
+        <option value="personality">Personality Quiz</option>
+        </select>
+        <button>Select</button>
+    </form> 
+
+{% endblock %}
